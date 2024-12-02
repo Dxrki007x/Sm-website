@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lexend+Peta:wght@100..900&family=Montserrat:wght@324&family=Rubik+Mono+One&family=Sedgwick+Ave+Display&family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in total width and height */
+}
+
+body {
+    background-color: #FFB6C1;
+    color: white;
+    font-family: "Montserrat", sans-serif; /* Add a fallback font */
+    padding: 20px; /* Add padding for smaller screens */
+}
+
+.LOGO {
+    padding: 20px;
+    font-family: "Parisienne", cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 3rem; /* Reduce font size for better scaling */
+    text-align: center;
+}
+
+.bayby {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    gap: 20px; /* Add spacing between items */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%; /* Adjust card width for smaller screens */
+    max-width: 600px; /* Limit maximum card width */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #bc4afd;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    background-color: #9e3fd4;
+}
+
+/* Responsive Design */
+
+/* Small screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .LOGO {
+        font-size: 2.5rem; /* Reduce logo font size for smaller screens */
+    }
+
+    .card {
+        width: 100%; /* Use full width on small screens */
+    }
+
+    .card-content {
+        padding: 10px; /* Reduce padding for better spacing */
+    }
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 1200px) {
+    .LOGO {
+        font-size: 4.5rem; /* Increase logo font size for large screens */
+    }
+
+    .bayby {
+        gap: 30px; /* Increase spacing between cards */
+    }
+
+    .card-content {
+        padding: 20px; /* Add more padding for large screens */
+    }
+}

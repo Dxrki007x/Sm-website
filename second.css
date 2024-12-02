@@ -1,0 +1,44 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+  text-align: center;
+  margin-top: 5vh; /* ใช้หน่วย vh เพื่อให้ยืดหยุ่นตามหน้าจอ */
+  background-color: rgb(255, 188, 252);
+  padding: 0 5%; /* เพิ่ม padding เพื่อให้เนื้อหาไม่ชิดขอบ */
+}
+
+img {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มความนุ่มนวล */
+  max-width: 100%; /* ทำให้ภาพไม่ใหญ่กว่าขนาดจอ */
+  height: auto; /* รักษาอัตราส่วนของภาพ */
+}
+
+/* เอฟเฟกต์เมื่อ Hover */
+img:hover {
+  transform: scale(1.03); /* ขยายรูปภาพ */
+}
+
+.btn{
+  background-color: #bc4afd;
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+}
+
+.btn:hover{
+  background-color: #9e3fd4;
+}
+
+/* การตั้งค่ารูปแบบสำหรับหน้าจอเล็ก */
+@media (max-width: 768px) {
+  body {
+    margin-top: 2vh; /* ลดระยะห่างในหน้าจอเล็ก */
+  }
+}
+
+/* การตั้งค่ารูปแบบสำหรับหน้าจอใหญ่มาก */
+@media (min-width: 1200px) {
+  body {
+    margin-top: 10vh; /* ปรับระยะห่างเพิ่มสำหรับหน้าจอใหญ่ */
+  }
+}
